@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./college.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 4%;
+}
+
+nav a{
+    color: #fff;
+    font-size: x-large;
+}
+nav a span{
+    color: #f1f111;
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li {
+    display: inline-block;
+    margin: 5px 20px;
+}
+.nav-link ul li a{
+    font-size: 14px;
+    text-decoration: none;
+}
+.nav-link ul li a::after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0%;
+    background: #f1f111;
+    transition: .6s;
+}
+.nav-link ul li a:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 55px;
+}
+
+@keyframes loop {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: loop 4s ease-out;
+}
+
+.text-box p{
+    font-size: 20px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* p {
+    animation: slideIn 3s ease-out;
+} */
+
+.text-box a{
+    font-size: 14px;
+    text-decoration: none;
+    color: aliceblue;
+    display: inline-block;
+    padding: 10px 40px;
+    border: 1px solid #fff;
+    margin-top: 10px;
+    background: transparent;
+    transition: .6s;
+
+}
+.text-box a:hover{
+    background: #f1f111e1;
+    border: 1px solid #f1f111e1;
+}
+
+@media (max-width: 660px){
+    .text-box h1{
+        font-size: 35px;
+    }
+}
+
+footer {
+    background-color:#333; 
+    color:#fff; 
+    padding:20px; 
+    text-align:center;
+}
+
+/* footer p :hover{
+    color: #f1f111e1;
+    border: 1px solid #f1f111e1;
+} */
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* footer a :hover{
+    color: #f1f111;
+    text-decoration: none;
+}
+@media (max-width: 660px){
+    footer p a{
+        font-size: 35px;
+    }
+} */
+.icon {
+    font-size: 30px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+
+
+.slider {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+    width: 300%; /* Adjust based on the number of slides */
+}
+
+.slide {
+    width: 100vw; /* Full viewport width */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+img {
+    width: 700;
+    height: 300px; /* Maintain aspect ratio */
+    border-radius: 25px;
+}
+
+/* .bg {
+    background-image: url('college.jpg');
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 1500px;
+} */

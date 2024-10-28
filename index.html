@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> Edu<span>Kart.com</span></a>
+            <div class="nav-link">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">COURSES</a></li>
+                    <li><a href="">REGISTER</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Looking for Better University</h1>
+            <p>Your Service Provider for Quality Professional Education </p>
+        <input type="search" placeholder="   search for events" style="width: 500px; height: 43px; border-radius: 0;" >
+
+                <a href="">Search</a>
+
+        </div>
+
+        <center>
+
+
+            <div style=" height: 300px; width: 100%; margin-top: 700px;" class="bg">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><center><img src="college.jpg" alt="Image 1"></center></div>
+                        <div class="slide"><center><img src="college3.jpg" alt="Image 2"></center></div>
+                        <div class="slide"><center><img src="college4.jpg" alt="Image 3"></center></div>
+                    </div>
+                </div>
+
+        </center>
+        
+    
+    </section>
+
+   
+    
+        <script>
+            let currentIndex = 0;
+            const slides = document.querySelectorAll('.slide');
+    
+            function showNextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length; // Loop back to the first slide
+                const offset = -currentIndex * 100; // Calculate offset
+                document.querySelector('.slides').style.transform = `translateX(${offset}vw)`;
+            }
+    
+            setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+        </script>
+    </div>
+
+    <footer style="height: 400px;">
+        <p style="margin-top: 100px;"><strong>Edu Kart.com</strong></p>
+
+        <p>Email: <a href="mailto:info@companyname.com" style="color:#fff;" class="text">edukart@gmail.com</a></p>
+        <p>Phone: +91 1234677890</p>
+        <p>Website: <a href="http://www.companyname.com" style="color:#fff;">www.Edukart.com</a></p>
+<br>
+        <p>&copy;2024 Edu Kart Web Pvt.All Right Reserved.</p>
+        <br>
+        <div class="icon">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+
+        </div>
+    </footer>
+    
+</body>
+</html>
